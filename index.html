@@ -73,6 +73,7 @@
             transition: transform 0.3s ease;
             max-width: 100%;
             object-fit: contain;
+            border-radius: 15px; /* Bordas arredondadas */
         }
 
         .logo-img:hover {
@@ -550,6 +551,7 @@
             
             .logo-img {
                 height: 45px;
+                border-radius: 12px; /* Bordas menores em mobile */
             }
             
             .hero {
@@ -666,6 +668,7 @@
             
             .logo-img {
                 height: 40px;
+                border-radius: 10px; /* Bordas ainda menores para telas pequenas */
             }
             
             .hero-content h1 {
@@ -797,6 +800,10 @@
             .whatsapp-float i {
                 font-size: 1.1rem;
             }
+            
+            .logo-img {
+                border-radius: 8px;
+            }
         }
 
         /* Ajustes para telas muito pequenas em landscape */
@@ -834,7 +841,7 @@
 <body>
     <header>
         <div class="container header-container">
-            <!-- LOGO - imagem enviada diretamente -->
+            <!-- LOGO - imagem enviada diretamente com bordas arredondadas -->
             <img src="logoPEG2.png" alt="Picos Elite Garden" class="logo-img" loading="lazy">
             <nav class="nav-menu">
                 <a href="#home">Home</a>
@@ -1042,13 +1049,6 @@
                 if(target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-            });
-        });
-
-        // Fechar menu mobile ao clicar em um link (opcional)
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                // Se houver um menu hamburguer no futuro, pode fechar aqui
             });
         });
     </script>
